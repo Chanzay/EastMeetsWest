@@ -1,0 +1,297 @@
+/*----Color palet varible----*/
+:root{
+    --primary-color: #e72727;
+    --primary-bg-color: #656565;
+    --light-color: #ffffff;
+    }
+
+/*----Reset and genral layout----*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100%;
+}
+
+/*----header and navigation----*/
+header{
+    background-color:  var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    position: static;
+    font-family: sans-serif;
+}
+
+.nav {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+} 
+
+.nav a {
+    color: #ffffff
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*----Home page picture----*/
+#main-pic{
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    
+    
+}
+
+/*Grid Layout for featured restaurant*/
+.grid{
+    object-fit: cover;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    text-align: center;
+}
+
+.overlay{
+    position: relative;
+}
+/*Places hover text over grid pictures*/
+.text-content{
+    color: #656565;
+    position: absolute;
+    inset: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+/*Displays restaurant names when hover over*/
+#Cilintro:hover, #boiling:hover, #open:hover, .text-content:hover{
+    opacity: 1;
+    font-size: 4rem;
+    background-color: #ffffff;
+    transition: .5s ease;
+}
+
+
+/*----About Us----*/
+.aboutUs{
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 50%;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    background-color: #656565;
+    font-family: sans-serif;
+}
+
+.aboutUs h1{
+    font-size: 3rem;
+}
+
+.aboutUs p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+#more-info-btn{
+    font-size: 16px;
+}
+
+#more-info-container{
+    font-family: sans-serif;
+}
+
+/*----Write a review page----*/
+.reviewOverlay h1{
+    font-size: 64px;
+    text-align: center;
+}
+
+.reviewOverlay{
+    display: block;
+    text-align: center;
+    margin: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+
+#review{
+    width: 50%;
+    height: 22rem;
+    padding: 10px;
+    border: 2px solid #656565;
+    border-radius: 30px;
+    justify-content: center;
+    resize: none;
+}
+
+#submitForm{
+    width: 50%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+#submitForm:hover{
+    background-color: #e72727;
+}
+
+.test{
+    max-width: 100%;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #656565;
+    margin-bottom: 20px;
+
+}
+
+.review-page h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    font-weight: normal;
+}
+
+.review-page {
+    padding-bottom: 50px;
+  }
+
+/*----SouthEast Asian & East Asian Page----*/
+.southEastAsianMainPic img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.restaurantsGrid img{
+    object-fit: cover;
+    width: 100%
+}
+
+.restaurantsGrid{
+margin: 4rem;
+padding: 4rem;
+}
+
+.restaurantsIntroduction{
+    font-size: 32px;
+    text-align: center;
+    margin: 24px;
+    padding: 24px;
+    font-family: sans-serif;
+}
+
+
+/*----Review sub pages for restaurant ----*/
+.reastrantReview img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    opacity: 15%;
+}
+.reastrantReviewImg{
+    position: relative;
+}
+
+.reastrantReviewImg2{
+    position: absolute;
+    inset: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #656565;
+    font-family: sans-serif;
+
+}
+
+.reastrantReview{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.reastrantReview h1{
+    border-top: 2px solid #656565;
+    text-align: center;
+}
+
+
+.contactInfo{
+   display: flex;
+    flex-direction: row; 
+    justify-content:space-evenly;
+    margin: 24px;
+}
+
+.contactInfo a{
+    font-size: 32px;
+    border: 1px solid #656565;
+    border-radius: 30px;
+    padding: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #e72727;
+    color: #ffffff;
+}
+
+.contactInfo a:hover{
+    background-color: #656565;
+}
+
+
+
+
+/*----Footer----*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e72727;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+
